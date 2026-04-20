@@ -1,0 +1,40 @@
+Closed-loop comparison summary
+==============================
+LQR gain K: [-1.         33.05760426 -0.8563203   4.50399099]
+Initial conditions used: [[0.         0.07853982 0.         0.        ]
+ [0.         0.31415927 0.         0.        ]
+ [0.         0.78539816 0.         0.        ]]
+
+Case 1: x0 = [0.         0.07853982 0.         0.        ]
+  Max |nonlinear - linear| theta = 1.206640e+03 rad (69135.3862 deg)
+  Max |nonlinear - linear| alpha = 4.010075e+00 rad (229.7604 deg)
+  Max |nonlinear - linear| theta_dot = 1.749962e+02 rad/s (10026.5440 deg/s)
+  Max |nonlinear - linear| alpha_dot = 1.593660e+01 rad/s (913.0998 deg/s)
+  Linear alpha settling = 1.7640 s
+  Nonlinear alpha settling = 8.0000 s
+  Peak |u| linear = 2.5963 V
+  Peak |u| nonlinear = 10.0000 V
+
+Case 2: x0 = [0.         0.31415927 0.         0.        ]
+  Max |nonlinear - linear| theta = 1.209954e+03 rad (69325.2396 deg)
+  Max |nonlinear - linear| alpha = 3.852533e+00 rad (220.7339 deg)
+  Max |nonlinear - linear| theta_dot = 1.749899e+02 rad/s (10026.1827 deg/s)
+  Max |nonlinear - linear| alpha_dot = 1.504610e+01 rad/s (862.0779 deg/s)
+  Linear alpha settling = 1.7640 s
+  Nonlinear alpha settling = 8.0000 s
+  Peak |u| linear = 10.3854 V
+  Peak |u| nonlinear = 10.0000 V
+
+Case 3: x0 = [0.         0.78539816 0.         0.        ]
+  Max |nonlinear - linear| theta = 1.209704e+03 rad (69310.9379 deg)
+  Max |nonlinear - linear| alpha = 3.618412e+00 rad (207.3197 deg)
+  Max |nonlinear - linear| theta_dot = 1.749910e+02 rad/s (10026.2481 deg/s)
+  Max |nonlinear - linear| alpha_dot = 1.331944e+01 rad/s (763.1478 deg/s)
+  Linear alpha settling = 1.7640 s
+  Nonlinear alpha settling = 8.0000 s
+  Peak |u| linear = 25.9634 V
+  Peak |u| nonlinear = 10.0000 V
+
+Notes:
+- Linear model uses the exact A, B matrices from the prerequisite report.
+- Nonlinear model is simulated with the same LQR gain and actuator saturation.
